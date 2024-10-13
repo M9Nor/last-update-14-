@@ -1,0 +1,20 @@
+/* CSS Variables
+-Global
+-Local
+
+*/
+
+:root{
+    --mainColor:#4caf50;
+    --secondColor: #8bc34a;
+    --paragraColor: #ff9800;
+    --mainPadding:15px;
+    --mainMargin:15px;
+    
+}
+.one{
+    color: var(--mainColor);
+}
+h1, h2, h3, h4{
+    font-weight: 700;
+}
