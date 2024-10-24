@@ -1,11 +1,13 @@
-// for header
-let header = document.querySelector("header")
-
-window.onscroll =function(){
-    if(this.scrollY >=50){
-       header.classList.add("active")
-
+// This is class For Header "active"
+let Header = document.querySelector("header")
+window.onscroll = function(){
+    if(this.scrollY >=50) {
+        Header.classList.add("active")
     }else{
-        header.classList.remove("active")
+        Header.classList.remove("active")
     }
 }
+
+//on taplet menu
+
+let 

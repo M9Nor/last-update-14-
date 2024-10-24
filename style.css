@@ -78,10 +78,11 @@ header{
     right: 0;
     height: 100px;
 }
-
 header.active{
-    background-color: #1E1B2E;
+    background-color: #1D1B2E;
 }
+
+
 
 /* background lines sami UI */
 
@@ -179,18 +180,18 @@ header nav .links a:hover{
     transform: scale(1.1);
     
 }
-header nav .icons-social{
+header nav .icons_social{
     display: flex;
     gap: 20px;
     color: blanchedalmond;
     font-size: 2em;
 }
-header nav .icons-social a{
+header nav .icons_social a{
     color: var(--mainColor);
     transition: 0.4s ease;
 
 }
-header nav .icons-social a:hover{
+header nav .icons_social a:hover{
     color: var(--primaryColor);
     transform: scale(0.9);
 }
@@ -467,6 +468,14 @@ header nav .icons-social a:hover{
 border-color: var(--primaryColor);
 }
 
+.close-menu,
+.logo-menu,
+.open-menu
+
+{
+    display: none;
+}
+
 .btn-cta-contact{
     margin-top: 20px;
     background-color: var(--primaryColor);
@@ -485,4 +494,55 @@ border-color: var(--primaryColor);
 .form-contact .btn-cta-contact{
     position: absolute;
     left: 0;
+}
+
+/* Responive Desghn */
+
+@media(max-width:1250px){
+    .container{
+    
+    }
+}
+@media(max-width:1000px){
+    header nav .links a{
+font-size: 18px;
+font-weight: 500;
+    }
+}
+@media(max-width:800px){
+    header nav .links{
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        width: 350px;
+        left: 0;
+        background-color: #5D45FD;
+        height: 100vh;
+        text-align: center;
+        padding: 40px 0;
+
+
+    
+    }
+    .close-menu{
+        display: block;
+        font-size: 30px;
+        color: #C850C0;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+
+    }
+    .logo-menu{
+        display: block;
+        width: 120px;
+        margin-left: 120px;
+        
+    }
+    .open-menu{
+    display: block;
+    position: absolute;
+    right: 18px;
+}
+    
 }
